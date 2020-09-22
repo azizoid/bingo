@@ -1,0 +1,46 @@
+// @import "~bootstrap/scss/bootstrap.scss";
+@import "./bootstrap.scss";
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 1rem;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: rgb(151, 147, 221);
+  background: linear-gradient(
+    145deg,
+    rgba(151, 147, 221, 1) 0%,
+    rgba(198, 198, 233, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+table {
+  table-layout: fixed;
+}
+
+table tbody tr td {
+  border: 1px solid black;
+}
+
+.cell .num {
+  text-align: right;
+}
+
+.cell .txt {
+  text-align: center;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.8rem;
+  }
+}
