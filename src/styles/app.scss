@@ -1,5 +1,6 @@
 // @import "~bootstrap/scss/bootstrap.scss";
 @import "./bootstrap.scss";
+@import "../../node_modules/rfs/scss";
 
 html {
   position: relative;
@@ -29,6 +30,14 @@ table {
 
 table tbody tr td {
   border: 1px solid black;
+
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  table tbody tr td {
+    font-size: calc(0.525rem + 1vw);
+  }
 }
 
 .cell .num {
@@ -39,8 +48,8 @@ table tbody tr td {
   text-align: center;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 0.8rem;
-  }
-}
+// @include media-breakpoint-up(sm) {
+//   html {
+//     font-size: 0.8rem;
+//   }
+// }
